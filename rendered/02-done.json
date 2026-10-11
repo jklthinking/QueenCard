@@ -1,0 +1,226 @@
+{
+  "body": {
+    "elements": [
+      {
+        "content": "QueenCard 本地生成验收示例。",
+        "element_id": "main_text",
+        "tag": "markdown"
+      },
+      {
+        "background_color": "grey",
+        "border": {
+          "color": "grey"
+        },
+        "elements": [
+          {
+            "icon": {
+              "tag": "standard_icon",
+              "token": "mindmap_outlined"
+            },
+            "tag": "div",
+            "text": {
+              "content": "检查卡片布局",
+              "tag": "plain_text",
+              "text_color": "grey",
+              "text_size": "notation"
+            }
+          }
+        ],
+        "expanded": false,
+        "header": {
+          "title": {
+            "content": "思考过程 (1)",
+            "tag": "plain_text"
+          }
+        },
+        "padding": "4px 8px",
+        "tag": "collapsible_panel",
+        "vertical_spacing": "8px"
+      },
+      {
+        "background_color": "grey",
+        "border": {
+          "color": "grey"
+        },
+        "elements": [
+          {
+            "icon": {
+              "tag": "standard_icon",
+              "token": "file-link-text_outlined"
+            },
+            "tag": "div",
+            "text": {
+              "content": "Read\n读取设计规格",
+              "tag": "plain_text",
+              "text_size": "notation"
+            }
+          }
+        ],
+        "expanded": false,
+        "header": {
+          "title": {
+            "content": "工具步骤 (1)",
+            "tag": "plain_text"
+          }
+        },
+        "padding": "4px 8px",
+        "tag": "collapsible_panel",
+        "vertical_spacing": "8px"
+      },
+      {
+        "tag": "hr"
+      },
+      {
+        "content": "🧠 gpt-6.1-sol · 💪 high · ⌛ 42s",
+        "tag": "markdown",
+        "text_size": "notation"
+      },
+      {
+        "content": "📝 上下文 ▓▓▓▓░░░░ 48%",
+        "tag": "markdown",
+        "text_size": "notation"
+      },
+      {
+        "columns": [
+          {
+            "elements": [
+              {
+                "behaviors": [
+                  {
+                    "type": "callback",
+                    "value": {
+                      "action": "nav:/model",
+                      "session_key": "demo:review"
+                    }
+                  }
+                ],
+                "disabled": false,
+                "tag": "button",
+                "text": {
+                  "content": "换模型",
+                  "tag": "plain_text"
+                },
+                "type": "default",
+                "width": "fill"
+              }
+            ],
+            "tag": "column",
+            "weight": 1,
+            "width": "weighted"
+          },
+          {
+            "elements": [
+              {
+                "behaviors": [
+                  {
+                    "type": "callback",
+                    "value": {
+                      "action": "nav:/reasoning",
+                      "session_key": "demo:review"
+                    }
+                  }
+                ],
+                "disabled": false,
+                "tag": "button",
+                "text": {
+                  "content": "换强度",
+                  "tag": "plain_text"
+                },
+                "type": "default",
+                "width": "fill"
+              }
+            ],
+            "tag": "column",
+            "weight": 1,
+            "width": "weighted"
+          },
+          {
+            "elements": [
+              {
+                "behaviors": [
+                  {
+                    "type": "callback",
+                    "value": {
+                      "action": "act:/new",
+                      "session_key": "demo:review"
+                    }
+                  }
+                ],
+                "disabled": false,
+                "tag": "button",
+                "text": {
+                  "content": "新对话",
+                  "tag": "plain_text"
+                },
+                "type": "default",
+                "width": "fill"
+              }
+            ],
+            "tag": "column",
+            "weight": 1,
+            "width": "weighted"
+          },
+          {
+            "elements": [
+              {
+                "behaviors": [
+                  {
+                    "type": "callback",
+                    "value": {
+                      "action": "act:/stop",
+                      "session_key": "demo:review"
+                    }
+                  }
+                ],
+                "confirm": {
+                  "text": {
+                    "content": "正在生成的内容会被中断",
+                    "tag": "plain_text"
+                  },
+                  "title": {
+                    "content": "停止当前任务？",
+                    "tag": "plain_text"
+                  }
+                },
+                "disabled": true,
+                "disabled_tips": {
+                  "content": "当前没有正在执行的任务",
+                  "tag": "plain_text"
+                },
+                "tag": "button",
+                "text": {
+                  "content": "停止",
+                  "tag": "plain_text"
+                },
+                "type": "default",
+                "width": "fill"
+              }
+            ],
+            "tag": "column",
+            "weight": 1,
+            "width": "weighted"
+          }
+        ],
+        "flex_mode": "flow",
+        "tag": "column_set"
+      }
+    ]
+  },
+  "config": {
+    "enable_forward_interaction": true,
+    "streaming_mode": false,
+    "update_multi": true
+  },
+  "header": {
+    "subtitle": {
+      "content": "✅ 已完成 · queencard-demo",
+      "tag": "plain_text"
+    },
+    "template": "blue",
+    "title": {
+      "content": "🧭 Guide-A",
+      "tag": "plain_text"
+    }
+  },
+  "schema": "2.0"
+}

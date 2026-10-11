@@ -1,0 +1,34 @@
+QueenCard is a fork of cc-connect.
+
+Upstream project:
+  https://github.com/chenhg5/cc-connect
+  Author: chenhg5
+  License: MIT (declared in the upstream README and npm/package.json;
+  the v1.5.0 snapshot did not ship a LICENSE file)
+
+Baseline: cc-connect v1.5.0, commit 17c61062.
+
+QueenCard is an independent community fork. It is not affiliated with or
+endorsed by the cc-connect project. This repository is pinned to the
+baseline above and does not follow upstream auto-update. New QueenCard
+releases rebase onto a chosen upstream tag on purpose; they are never
+installed by running `cc-connect update`.
+
+Thanks to chenhg5 and the cc-connect contributors for the bridge
+architecture, agent integrations, and platform support.
+
+QueenCard changes are Copyright (c) 2026 JKL Thinking / jklthinking
+and are also released under the MIT License. See LICENSE.
+
+QueenCard v1.5.0-queencard.2 includes:
+
+- Per-bot identity colors, localized four-state Feishu cards, inline
+  model/effort selectors, confirmed stop controls, and optional quota hooks.
+- Thinking kept out of the reply body for ACP agents (including
+  agent_thought_chunk).
+- Three-line rich-card status footer (model · effort · elapsed / context
+  bar / working directory).
+- Codex model-cache priority and six reasoning-effort levels.
+- Grok ACP model discovery and effort switching.
+- Disabled CLI and in-chat self-update; rebuild from source.
+- A source build script for the pinned Linux amd64 binary.

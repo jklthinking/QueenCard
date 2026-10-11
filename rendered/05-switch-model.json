@@ -1,0 +1,110 @@
+{
+  "body": {
+    "elements": [
+      {
+        "content": "当前：gpt-6.1-sol",
+        "tag": "markdown"
+      },
+      {
+        "behaviors": [
+          {
+            "type": "callback",
+            "value": {
+              "session_key": "demo:review"
+            }
+          }
+        ],
+        "initial_index": 0,
+        "options": [
+          {
+            "text": {
+              "content": "gpt-6.1-sol",
+              "tag": "plain_text"
+            },
+            "value": "act:/model switch 1"
+          },
+          {
+            "text": {
+              "content": "gpt-6-astra",
+              "tag": "plain_text"
+            },
+            "value": "act:/model switch 2"
+          }
+        ],
+        "placeholder": {
+          "content": "选择模型",
+          "tag": "plain_text"
+        },
+        "tag": "select_static"
+      },
+      {
+        "columns": [
+          {
+            "elements": [
+              {
+                "behaviors": [
+                  {
+                    "type": "callback",
+                    "value": {
+                      "action": "nav:/reasoning",
+                      "session_key": "demo:review"
+                    }
+                  }
+                ],
+                "tag": "button",
+                "text": {
+                  "content": "换强度",
+                  "tag": "plain_text"
+                },
+                "type": "default",
+                "width": "fill"
+              }
+            ],
+            "tag": "column",
+            "weight": 1,
+            "width": "weighted"
+          },
+          {
+            "elements": [
+              {
+                "behaviors": [
+                  {
+                    "type": "callback",
+                    "value": {
+                      "action": "nav:/current",
+                      "session_key": "demo:review"
+                    }
+                  }
+                ],
+                "tag": "button",
+                "text": {
+                  "content": "返回",
+                  "tag": "plain_text"
+                },
+                "type": "default",
+                "width": "fill"
+              }
+            ],
+            "tag": "column",
+            "weight": 1,
+            "width": "weighted"
+          }
+        ],
+        "flex_mode": "flow",
+        "tag": "column_set"
+      }
+    ],
+    "padding": "12px"
+  },
+  "config": {
+    "update_multi": true
+  },
+  "header": {
+    "template": "indigo",
+    "title": {
+      "content": "换模型",
+      "tag": "plain_text"
+    }
+  },
+  "schema": "2.0"
+}
